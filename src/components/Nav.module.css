@@ -1,0 +1,116 @@
+* {
+      font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+      line-height: 1.5;
+      font-weight: 400;
+}
+
+.nav {
+      width: 100%;
+      max-width: 1920px;
+      display: flex;
+      justify-content: space-between;
+      height: 15vh;
+      background: rgb(255, 255, 255);
+      margin: 0 auto;
+}
+
+.logoContainer {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+}
+
+.nav img {
+      height: 50px;
+      margin: 0;
+}
+
+.nav ul {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+}
+
+.nav ul li {
+      color: rgb(243, 242, 242);
+      background-color: rgb(27, 129, 212);
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 13px;
+      margin-right: 20px;
+      padding: 8px;
+}
+
+.nav ul li a {
+      text-decoration: none;
+}
+@media (max-width: 1024px) {
+      .nav {
+            height: 15vh;
+      }
+
+      .nav img {
+            height: 50px;
+      }
+}
+
+@media (max-width: 768px) {
+      .nav {
+            height: 30vh;
+            flex-direction: column;
+            justify-content: center;
+            padding: 10px;
+      }
+
+      .logoContainer {
+            margin-bottom: 10px;
+      }
+
+      .nav img {
+            height: 50px;
+            margin-bottom: 14px;
+            margin-right: 14px;
+      }
+
+      .nav ul {
+            display: block;
+            text-align: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            width: 97%;
+      }
+
+      .nav ul li {
+            margin-right: 0;
+            margin-bottom: 10px;
+            padding: 4px 12px;
+      }
+}
+@media (max-width: 480px) {
+      .nav {
+            height: 15vh;
+            margin-bottom: 120px;
+      }
+
+      .nav img {
+            height: 50px;
+            margin-top: 120px;
+            margin-bottom: 16px;
+      }
+
+      .nav ul {
+            display: block;
+            text-align: center;
+            margin-bottom: 20px;
+      }
+
+      .nav ul li {
+            margin-right: 0;
+            margin-bottom: 10px;
+            padding: 4px 12px;
+      }
+}
