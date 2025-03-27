@@ -1,12 +1,70 @@
-# React + Vite
+# L5Mission4Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This directory contains the frontend application for the Mission3 project.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Interactive chatbot powered by AI for insurance policy assistance.
+- Responsive design with a hero section and navigation bar.
+- Built with React and styled using CSS modules.
 
-## Expanding the ESLint configuration
+## Setup
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js
+- Docker (optional for containerized deployment)
+
+### Steps
+
+1. Install dependencies:
+      ```bash
+      npm install
+      ```
+2. Start the application:
+      ```bash
+      npm start
+      ```
+3. The application will run at `http://localhost:5173`.
+
+## Docker
+
+### Build and Run
+
+1. Build the Docker image:
+      ```bash
+      docker build -t frontend-app .
+      ```
+2. Run the container:
+      ```bash
+      docker run -p 5173:5173 frontend-app
+      ```
+
+The frontend will be accessible at `http://localhost:5173`.
+
+## Project Structure
+
+- **`src/components`**: Contains reusable React components like `Nav`, `Hero`, and `ChatBot`.
+- **`src/geminiAPI.js`**: Handles communication with the backend API.
+
+## Key Components
+
+### `Nav`
+
+- Displays the navigation bar with a logo and menu items.
+
+### `Hero`
+
+- Provides a guide for users to interact with the chatbot.
+
+### `ChatBot`
+
+- An AI-powered chatbot for assisting users in finding insurance policies.
+
+## API Integration
+
+The frontend communicates with the backend at `http://localhost:4000/insurance` to send and receive messages for the chatbot.
+
+## License
+
+This project is licensed under the MIT License.

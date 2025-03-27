@@ -1,5 +1,5 @@
 import React from "react";
-import ChatBot from "./components/ChatBot";
+import ChatBot from "./components/chatbot";
 import Hero from "./components/Hero";
 import Nav from "./components/Nav";
 
